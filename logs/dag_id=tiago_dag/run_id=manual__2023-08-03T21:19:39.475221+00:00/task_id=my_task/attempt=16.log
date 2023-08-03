@@ -1,0 +1,16 @@
+[2023-08-03T22:22:38.357+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiago_dag.my_task manual__2023-08-03T21:19:39.475221+00:00 [queued]>
+[2023-08-03T22:22:38.374+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiago_dag.my_task manual__2023-08-03T21:19:39.475221+00:00 [queued]>
+[2023-08-03T22:22:38.374+0000] {taskinstance.py:1308} INFO - Starting attempt 16 of 18
+[2023-08-03T22:22:38.395+0000] {taskinstance.py:1327} INFO - Executing <Task(BashOperator): my_task> on 2023-08-03 21:19:39.475221+00:00
+[2023-08-03T22:22:38.403+0000] {standard_task_runner.py:57} INFO - Started process 414 to run task
+[2023-08-03T22:22:38.408+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'tiago_dag', 'my_task', 'manual__2023-08-03T21:19:39.475221+00:00', '--job-id', '201', '--raw', '--subdir', 'DAGS_FOLDER/second_dag.py', '--cfg-path', '/tmp/tmphzereupf']
+[2023-08-03T22:22:38.411+0000] {standard_task_runner.py:85} INFO - Job 201: Subtask my_task
+[2023-08-03T22:22:38.478+0000] {task_command.py:410} INFO - Running <TaskInstance: tiago_dag.my_task manual__2023-08-03T21:19:39.475221+00:00 [running]> on host a4e8c4f3f4d7
+[2023-08-03T22:22:38.625+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tiago_dag' AIRFLOW_CTX_TASK_ID='my_task' AIRFLOW_CTX_EXECUTION_DATE='2023-08-03T21:19:39.475221+00:00' AIRFLOW_CTX_TRY_NUMBER='16' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-03T21:19:39.475221+00:00'
+[2023-08-03T22:22:38.628+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-03T22:22:38.629+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "echo 'Tiago' > /opt/***/utils/text.txt "]
+[2023-08-03T22:22:38.645+0000] {subprocess.py:86} INFO - Output:
+[2023-08-03T22:22:38.653+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-03T22:22:38.717+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=tiago_dag, task_id=my_task, execution_date=20230803T211939, start_date=20230803T222238, end_date=20230803T222238
+[2023-08-03T22:22:38.779+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-03T22:22:38.809+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check
